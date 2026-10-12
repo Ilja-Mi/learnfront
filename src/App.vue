@@ -10,7 +10,6 @@ let modal1Open = ref(false);
 
     <div class="modal">
       <div class="modal-background"></div>
-
       <div class="modal-content">
         <p class="image is-4by3">
           <img
