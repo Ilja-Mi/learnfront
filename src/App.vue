@@ -1,16 +1,12 @@
 <script setup>
-import { ref } from 'vue';
-import Modal from './Modal.vue';
+import RouterTabs from './components/RouterTabs.vue';
 
-let modal1Open = ref(false);
-let modal1Open = ref(false);
 
 </script>
 
 <template>
-  <div class="container content mt-3">
-
-  </div>
+    <RouterTabs></RouterTabs>
+    <RouterView />
 </template>
 
 <style></style>
