@@ -1,12 +1,14 @@
 import { createApp } from 'vue';
 import { createRouter, createWebHashHistory } from 'vue-router';
 import App from './App.vue';
-import Todo from './pages/Todo.vue';
+import ToDo from './pages/ToDo.vue';
+import Important from './pages/Important.vue';
 import Modals from './pages/Modals.vue';
 
 const routes = [
-    { path: '/', component: Todo, name: 'Todo' },
-    { path: '/modals', component: Modals, name: 'Modals' },
+    { path: '/', component: ToDo, name: 'Ülesanded' },
+    { path: '/important', component: Important, name: 'Olulised' },
+    { path: '/modals', component: Modals, name: 'Modaalaknad' },
 ];
 
 const router = createRouter({

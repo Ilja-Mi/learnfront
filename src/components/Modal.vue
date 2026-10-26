@@ -1,5 +1,6 @@
 <script setup>
 defineProps(['active', 'url', 'content']);
+defineEmits(['close']);
 </script>
 <template>
     <div class="modal" :class="{'is-active': active}">
@@ -7,6 +8,6 @@ defineProps(['active', 'url', 'content']);
         <div class="modal-content">
             <slot></slot>
         </div>
-        <button class="modal-close is-large" aria-label="close" @click="$emit('close')"></button>
+        <button class="modal-close is-large" aria-label="Sulge" @click="$emit('close')"></button>
     </div>
 </template>
