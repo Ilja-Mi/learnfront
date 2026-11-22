@@ -8,6 +8,7 @@ function add() {
     if (newItem.value.trim() !== '') {
         addItem(newItem.value.trim(), newImportance.value);
         newItem.value = '';
+        newImportance.value = 2;
     }
 }
 

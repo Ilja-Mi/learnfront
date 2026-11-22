@@ -4,11 +4,13 @@ import App from './App.vue';
 import ToDo from './pages/ToDo.vue';
 import Important from './pages/Important.vue';
 import Modals from './pages/Modals.vue';
+import Buttons from './pages/Buttons.vue';
 
 const routes = [
     { path: '/', component: ToDo, name: 'Ülesanded' },
     { path: '/important', component: Important, name: 'Olulised' },
     { path: '/modals', component: Modals, name: 'Modaalaknad' },
+    { path: '/buttons', component: Buttons, name: 'Nupud' },
 ];
 
 const router = createRouter({
