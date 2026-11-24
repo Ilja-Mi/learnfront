@@ -6,7 +6,12 @@ import RouterTabs from './components/RouterTabs.vue';
 
 <template>
     <RouterTabs></RouterTabs>
-    <RouterView />
+    <RouterView v-slot="{ Component }">
+        <Suspense :timeout="0">
+            <component :is="Component" />
+            <template #fallback><p role="status">Laadin…</p></template>
+        </Suspense>
+    </RouterView>
 </template>
 
 <style></style>

@@ -6,7 +6,7 @@ import Message from '../components/Message.vue';
     <section class="container content mt-3">
         <h1>Teated</h1>
         <Message>Ülesandele saab määrata prioriteedi.</Message>
-        <Message color="success" size="small">
+        <Message color="success" size="small" title="Valmis" closable>
             Ülesanne on märgitud tehtuks.
         </Message>
         <Message color="warning" size="large">
